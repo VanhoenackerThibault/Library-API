@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jf5KXQg5Xfs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ikusl\\OneDrive\\Documents\\school\\free time\\Library API\\Library.Api\\Library.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.12\\microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\11.0.0\\microsoft.entityframeworkcore.tools.11.0.0.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.openapi\\2.12.0\\microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
