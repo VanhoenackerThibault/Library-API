@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Library.Api/Library.Api.csproj" Id="8b1eb0b9-d30d-4e3b-b709-8253f191ffdb" />
+  <Project Path="Library.Models/Library.Models.csproj" />
+  <Project Path="Library.Repository/Library.Repository.csproj" Id="3287adff-fb53-4d21-8719-672245b7411c" />
+  <Project Path="Library.Services/Library.Services.csproj" Id="8a4600cd-0b30-427e-8d3b-fbceb0d1af77" />
+</Solution>
