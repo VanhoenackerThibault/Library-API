@@ -60,6 +60,8 @@ namespace Library.Services.Services
             }
 
             dbContext.Books.Remove(dbBook);
+
+            await dbContext.SaveChangesAsync();
         }
     }
 }

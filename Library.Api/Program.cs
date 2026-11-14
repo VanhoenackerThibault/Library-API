@@ -18,6 +18,7 @@ namespace Library.Api
             builder.Services.AddOpenApi();
 
             builder.Services.InstallDbConection();
+            builder.Services.InstallServices();
 
             var app = builder.Build();
 

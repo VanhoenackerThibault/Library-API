@@ -29,7 +29,7 @@ namespace Library.Api.Controllers
 
             if (book is null)
             {
-                return BadRequest(new { Mesage = "No book exists with that id!" });
+                return NotFound(new { Message = "No book exists with that id!" });
             }
 
             return Ok(book.ToDto());
@@ -54,7 +54,7 @@ namespace Library.Api.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { Mesage = $"A problem has accured with message: {ex.Message}" });
+                return NotFound(new { Message = $"A problem has accured with message: {ex.Message}" });
             }
         }
 
@@ -69,7 +69,7 @@ namespace Library.Api.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { Mesage = $"A problem has accured with message: {ex.Message}" });
+                return NotFound(new { Message = $"A problem has accured with message: {ex.Message}" });
             }
         }
     }

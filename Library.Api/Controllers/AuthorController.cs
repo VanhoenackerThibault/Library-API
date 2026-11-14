@@ -23,14 +23,14 @@ namespace Library.Api.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<Author>> GetBook([FromRoute] int id)
+        public async Task<ActionResult<Author>> GetAuthor([FromRoute] int id)
         {
 
             Author? author = await authorService.GetAuthorByIdAsync(id);
 
             if (author is null)
             {
-                return BadRequest(new { Mesage = "No author exists with that id!" });
+                return BadRequest(new { Message = "No author exists with that id!" });
             }
 
             return Ok(author.ToDto());
