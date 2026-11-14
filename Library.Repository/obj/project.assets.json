@@ -2637,23 +2637,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thiba\\.nuget\\packages\\": {},
+    "C:\\Users\\ikusl\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thiba\\Documents\\Vives\\Free time\\Library-API\\Library.Repository\\Library.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\ikusl\\OneDrive\\Documents\\school\\free time\\Library-API\\Library.Repository\\Library.Repository.csproj",
       "projectName": "Library.Repository",
-      "projectPath": "C:\\Users\\Thiba\\Documents\\Vives\\Free time\\Library-API\\Library.Repository\\Library.Repository.csproj",
-      "packagesPath": "C:\\Users\\Thiba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thiba\\Documents\\Vives\\Free time\\Library-API\\Library.Repository\\obj\\",
+      "projectPath": "C:\\Users\\ikusl\\OneDrive\\Documents\\school\\free time\\Library-API\\Library.Repository\\Library.Repository.csproj",
+      "packagesPath": "C:\\Users\\ikusl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ikusl\\OneDrive\\Documents\\school\\free time\\Library-API\\Library.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Thiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ikusl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2669,8 +2669,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Thiba\\Documents\\Vives\\Free time\\Library-API\\Library.Models\\Library.Models.csproj": {
-              "projectPath": "C:\\Users\\Thiba\\Documents\\Vives\\Free time\\Library-API\\Library.Models\\Library.Models.csproj"
+            "C:\\Users\\ikusl\\OneDrive\\Documents\\school\\free time\\Library-API\\Library.Models\\Library.Models.csproj": {
+              "projectPath": "C:\\Users\\ikusl\\OneDrive\\Documents\\school\\free time\\Library-API\\Library.Models\\Library.Models.csproj"
             }
           }
         }
@@ -2719,7 +2719,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

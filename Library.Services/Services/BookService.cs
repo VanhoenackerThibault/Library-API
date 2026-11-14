@@ -1,8 +1,10 @@
 ﻿using Library.Models.Core;
 using Library.Models.Dto;
+using Library.Models.Mappers;
 using Library.Repository;
 using Library.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,7 +22,17 @@ namespace Library.Services.Services
         {
             return await dbContext.Books.AsNoTracking().FirstOrDefaultAsync(b => b.Id == id);
         }
-        public async Task<Book?> UpdateBook(int id, BookDto bookDto)
+
+        public async Task<Book> CreateBookAsync(BookDto bookDto)
+        {
+            EntityEntry<Book> newBook = dbContext.Books.Add(bookDto.ToEntity());
+
+            await dbContext.SaveChangesAsync();
+
+            return newBook.Entity;
+        }
+
+        public async Task<Book> UpdateBookAsync(int id, BookDto bookDto)
         {
             Book? dbBook = await dbContext.Books.FirstOrDefaultAsync(b => b.Id == id);
 

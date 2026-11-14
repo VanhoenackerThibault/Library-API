@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "bUAyxhEZUaE=",
+  "dgSpecHash": "MCric/IkLGY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thiba\\Documents\\Vives\\Free time\\Library-API\\Library.Services\\Library.Services.csproj",
+  "projectFilePath": "C:\\Users\\ikusl\\OneDrive\\Documents\\school\\free time\\Library-API\\Library.Services\\Library.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.15\\microsoft.entityframeworkcore.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.15\\microsoft.entityframeworkcore.abstractions.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.15\\microsoft.entityframeworkcore.analyzers.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.15\\microsoft.extensions.caching.abstractions.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.15\\microsoft.extensions.caching.memory.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.15\\microsoft.extensions.dependencyinjection.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.15\\microsoft.extensions.dependencyinjection.abstractions.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.logging\\10.0.15\\microsoft.extensions.logging.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.15\\microsoft.extensions.logging.abstractions.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.options\\10.0.15\\microsoft.extensions.options.10.0.15.nupkg.sha512",
-    "C:\\Users\\Thiba\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.15\\microsoft.extensions.primitives.10.0.15.nupkg.sha512"
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.15\\microsoft.entityframeworkcore.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.15\\microsoft.entityframeworkcore.abstractions.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.15\\microsoft.entityframeworkcore.analyzers.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.15\\microsoft.extensions.caching.abstractions.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.15\\microsoft.extensions.caching.memory.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.15\\microsoft.extensions.dependencyinjection.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.15\\microsoft.extensions.dependencyinjection.abstractions.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.logging\\10.0.15\\microsoft.extensions.logging.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.15\\microsoft.extensions.logging.abstractions.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.options\\10.0.15\\microsoft.extensions.options.10.0.15.nupkg.sha512",
+    "C:\\Users\\ikusl\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.15\\microsoft.extensions.primitives.10.0.15.nupkg.sha512"
   ],
   "logs": []
 }

@@ -8,7 +8,7 @@ namespace Library.Models.Dto
 {
     public class BookDto
     {
-        [StringLength(200, ErrorMessage = "Title cant be longer than 200 charatcers")]
+        [MinimumLengthAfterTrim(MaxLength = 200, ErrorMessage = "Title cant be longer than 200 charatcers")]
         [Required]
         public required string Title { get; set; }
 

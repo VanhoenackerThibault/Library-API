@@ -18,6 +18,11 @@ namespace Library.Models.Mappers
             };
         }
 
+        public static List<BookDto> ToDto(this List<Book> books)
+        {
+            return books.Select(x => x.ToDto()).ToList();
+        }
+
         public static Book ToEntity(this BookDto book)
         {
             return new Book
