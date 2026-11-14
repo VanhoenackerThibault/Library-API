@@ -30,7 +30,7 @@ namespace Library.Api.Controllers
 
             if (author is null)
             {
-                return BadRequest(new { Message = "No author exists with that id!" });
+                return NotFound(new { Message = "No author exists with that id!" });
             }
 
             return Ok(author.ToDto());

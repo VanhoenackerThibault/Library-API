@@ -17,7 +17,7 @@ namespace Library.Api
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
-            builder.Services.InstallDbConection();
+            builder.Services.InstallDbConnection();
             builder.Services.InstallServices();
 
             var app = builder.Build();

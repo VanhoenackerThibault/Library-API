@@ -5,7 +5,7 @@ namespace Library.Api.Installers
 {
     public static class DbContextInstaller
     {
-        public static void InstallDbConection(this IServiceCollection services)
+        public static void InstallDbConnection(this IServiceCollection services)
         {
             services.AddDbContext<LibraryDbContext>(options =>
             {

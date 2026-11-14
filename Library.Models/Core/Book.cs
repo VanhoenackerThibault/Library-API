@@ -9,7 +9,7 @@ namespace Library.Models.Core
         public int Id { get; set; }
         public required string Title { get; set; }
         public required int ReleaseYear { get; set; }
-        public int? AuthorId { get; set; }
+        public int AuthorId { get; set; }
         public Author? Author { get; set; }
     }
 }

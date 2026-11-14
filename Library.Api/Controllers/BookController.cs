@@ -38,7 +38,12 @@ namespace Library.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Book>> CreateBook([FromBody] BookDto dto)
         {
-            Book book = await bookService.CreateBookAsync(dto);
+            Book? book = await bookService.CreateBookAsync(dto);
+
+            if (book is null)
+            {
+                return NotFound(new { Message = $"No author found with that id!" });
+            }
 
             return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book.ToDto());
         }
@@ -48,13 +53,18 @@ namespace Library.Api.Controllers
         {
             try
             {
-                Book book = await bookService.UpdateBookAsync(id, dto);
+                Book? book = await bookService.UpdateBookAsync(id, dto);
+
+                if (book is null)
+                {
+                    return NotFound(new { Message = $"No book/author found with that id!" });
+                }
 
                 return Ok(book.ToDto());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return NotFound(new { Message = $"A problem has accured with message: {ex.Message}" });
+                return BadRequest(new { Message = $"A problem has accrued" });
             }
         }
 
@@ -63,13 +73,18 @@ namespace Library.Api.Controllers
         {
             try
             {
-                await bookService.DeleteBookAsync(id);
+                bool? state = await bookService.DeleteBookAsync(id);
+
+                if (state is null)
+                {
+                    return NotFound(new { Message = $"No book found with that id!" });
+                }
 
                 return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return NotFound(new { Message = $"A problem has accured with message: {ex.Message}" });
+                return BadRequest(new { Message = $"A problem has accrued" });
             }
         }
     }

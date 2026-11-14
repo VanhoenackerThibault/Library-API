@@ -18,7 +18,7 @@ namespace Library.Models.Mappers
                 TotalObjects = totalBooks,
                 Result = result,
                 CurrentPage = currentPage,
-                TotalPages = totalBooks / pageSize
+                TotalPages = (totalBooks + pageSize - 1) / pageSize
             };
         }
 
@@ -32,7 +32,7 @@ namespace Library.Models.Mappers
                 TotalObjects = totalAuthors,
                 Result = result,
                 CurrentPage = currentPage,
-                TotalPages = totalAuthors / pageSize
+                TotalPages = (totalAuthors + pageSize - 1) / pageSize
             };
         }
     }

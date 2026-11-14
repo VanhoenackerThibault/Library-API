@@ -1,0 +1,13 @@
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\bin\Debug\net10.0\Library.Models.deps.json
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\bin\Debug\net10.0\Library.Models.dll
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\bin\Debug\net10.0\Library.Models.pdb
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library.Models.AssemblyInfoInputs.cache
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library.Models.AssemblyInfo.cs
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library.Models.csproj.CoreCompileInputs.cache
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library.Models.sourcelink.json
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library.Models.dll
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\refint\Library.Models.dll
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library.Models.pdb
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\ref\Library.Models.dll
+C:\Users\ikusl\OneDrive\Documents\school\free time\Library-API\Library.Models\obj\Debug\net10.0\Library..95D8261F.Up2Date

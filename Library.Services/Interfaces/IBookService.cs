@@ -10,8 +10,8 @@ namespace Library.Services.Interfaces
     {
         public Task<List<Book>> GetBooksAsync();
         public Task<Book?> GetBookByIdAsync(int id);
-        public Task<Book> CreateBookAsync(BookDto bookDto);
-        public Task<Book> UpdateBookAsync(int id, BookDto bookDto);
-        public Task DeleteBookAsync(int id);
+        public Task<Book?> CreateBookAsync(BookDto bookDto);
+        public Task<Book?> UpdateBookAsync(int id, BookDto bookDto);
+        public Task<bool?> DeleteBookAsync(int id);
     }
 }

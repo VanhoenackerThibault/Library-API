@@ -15,16 +15,23 @@ namespace Library.Services.Services
     {
         public async Task<List<Book>> GetBooksAsync()
         {
-            return await dbContext.Books.AsNoTracking().ToListAsync();
+            return await dbContext.Books.Include(b => b.Author).AsNoTracking().ToListAsync();
         }
 
         public async Task<Book?> GetBookByIdAsync(int id)
         {
-            return await dbContext.Books.AsNoTracking().FirstOrDefaultAsync(b => b.Id == id);
+            return await dbContext.Books.Include(b => b.Author).AsNoTracking().FirstOrDefaultAsync(b => b.Id == id);
         }
 
-        public async Task<Book> CreateBookAsync(BookDto bookDto)
+        public async Task<Book?> CreateBookAsync(BookDto bookDto)
         {
+            Author? author = await dbContext.Authors.AsNoTracking().FirstOrDefaultAsync(o => o.Id == bookDto.AuthorId);
+
+            if (author is null)
+            {
+                return null;
+            }
+
             EntityEntry<Book> newBook = dbContext.Books.Add(bookDto.ToEntity());
 
             await dbContext.SaveChangesAsync();
@@ -32,13 +39,20 @@ namespace Library.Services.Services
             return newBook.Entity;
         }
 
-        public async Task<Book> UpdateBookAsync(int id, BookDto bookDto)
+        public async Task<Book?> UpdateBookAsync(int id, BookDto bookDto)
         {
-            Book? dbBook = await dbContext.Books.FirstOrDefaultAsync(b => b.Id == id);
+            Book? dbBook = await dbContext.Books.Include(b => b.Author).FirstOrDefaultAsync(b => b.Id == id);
 
             if (dbBook is null)
             {
-                throw new ArgumentException("Given id does not have a book");
+                return null;
+            }
+
+            Author? author = await dbContext.Authors.AsNoTracking().FirstOrDefaultAsync(o => o.Id == bookDto.AuthorId);
+
+            if (author is null)
+            {
+                return null;
             }
 
             dbBook.AuthorId = bookDto.AuthorId;
@@ -50,18 +64,20 @@ namespace Library.Services.Services
             return dbBook;
         }
 
-        public async Task DeleteBookAsync(int id)
+        public async Task<bool?> DeleteBookAsync(int id)
         {
-            Book? dbBook = await dbContext.Books.FirstOrDefaultAsync(b => b.Id == id);
+            Book? dbBook = await dbContext.Books.Include(b => b.Author).FirstOrDefaultAsync(b => b.Id == id);
 
             if (dbBook is null)
             {
-                throw new ArgumentException("Given id does not have a book");
+                return null;
             }
 
             dbContext.Books.Remove(dbBook);
 
             await dbContext.SaveChangesAsync();
+
+            return true;
         }
     }
 }

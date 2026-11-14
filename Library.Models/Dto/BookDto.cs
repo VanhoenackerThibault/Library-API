@@ -17,6 +17,6 @@ namespace Library.Models.Dto
         public required int ReleaseYear { get; set; }
 
         [Required]
-        public int? AuthorId { get; set; }
+        public int AuthorId { get; set; }
     }
 }
